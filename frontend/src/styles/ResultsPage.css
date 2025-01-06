@@ -1,0 +1,91 @@
+.ResultsPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.winner-text-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.winner-text {
+  background-color: var(--winner-color);
+  color: black;
+  padding: 10px 10%;
+  border-radius: 40px;
+  font-weight: bold;
+}
+
+.score-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.score-indicator-bar-row {
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  display: flex;
+  margin: 0;
+  flex-grow: 1;
+
+  .score-indicator-bar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    .score-indicator-bar {
+      border-radius: 0 90px 90px 0;
+      flex: 1;
+      height: 100%;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: white;
+      padding-left: 10px;
+    }
+
+    h4 {
+      margin-left: 10px;
+    }
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px 20px;
+
+  button {
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 35%;
+    font-family: "Neuton";
+  }
+
+  button:first-child {
+    background-color: var(--color-green);
+  }
+
+  button:last-child {
+    background-color: var(--color-blue);
+  }
+}

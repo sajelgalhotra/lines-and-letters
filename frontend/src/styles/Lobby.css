@@ -1,0 +1,38 @@
+.Lobby-page {
+  height: 90vh;
+  width: 90vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3vw;
+}
+
+#code-bubble {
+  margin-bottom: 5vh;
+  justify-self: center;
+  width: 20vw;
+  height: 4vw; 
+  font-weight: bold;
+}
+
+#bottom-bubble {
+  height: 5vw;
+  width: 60vw;
+  font-weight: bold;
+}
+
+[id^=player-bubble] {
+  width: 25vw;
+  height: 6vmin; 
+}
+
+.Lobby-player-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  height: 50vh;
+  width: 90vw;
+
+  margin-left: 5.5vw;
+}

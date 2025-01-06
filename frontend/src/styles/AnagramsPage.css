@@ -1,0 +1,139 @@
+.App-header {
+  height: 100vh;
+}
+
+.AnagramsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  margin: 20px;
+  width: 100%;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+    .timer {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      width: 30%;
+      font-weight: bold;
+      border-radius: 100px;
+    }
+  }
+
+  .game-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-grow: 1;
+    font-size: 60px;
+    max-height: 80vh;
+
+    .left-side {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: baseline;
+      width: 20%;
+      padding: 10px;
+      border-radius: 0 0 100px 100px;
+      overflow-y: auto;
+
+      span {
+        margin: 5px;
+        padding: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .point-container {
+      font-weight: bold;
+      border-radius: 50%;
+      border: 1px solid;
+      position: relative;
+      bottom: 1vw;
+      width: 1.5vw;
+      aspect-ratio: 1/1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2vw;
+    }
+
+    .middle-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 40%;
+      min-width: 300px;
+      margin-top: 75px;
+
+      .message-box {
+        margin-bottom: 10px;
+        width: 30vw;
+        overflow: visible;
+
+        .already-submitted {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-radius: 6vw;
+
+          &.visible {
+            visibility: visible;
+          }
+
+          &.hidden {
+            visibility: hidden;
+          }
+        }
+      }
+
+      .selected-letters {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: 80px;
+        width: 100%;
+        border-radius: 8vw;
+
+        span {
+          margin: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .right-section {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 20%;
+      padding: 10px;
+      max-height: calc(90vh);
+      border-radius: 0 0 100px 100px;
+      overflow-y: scroll;
+
+      .score {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        font-size: 40px;
+        font-weight: bold;
+        overflow: visible;
+      }
+
+      .word-list {
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+  }
+}

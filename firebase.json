@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "./frontend/build",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "flask-fire",
+          "region": "us-central1",
+          "pinTag": false
+        }
+      }
+    ]
+  }
+}

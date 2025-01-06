@@ -1,0 +1,180 @@
+.Form {
+    position: absolute;
+    background-color: var(--selected-color);
+    border-radius: 30%;
+    width: 90%;
+    height: 80%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 5px solid black;
+
+    z-index: 50;
+}
+
+.Form * {
+    position: relative;
+}
+
+.Exit-button {
+    color: var(--selected-color);
+    background-color: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 10%;
+    left: 80%;
+    width: 10%;
+    z-index: 99;
+}
+
+.Exit-button:hover {
+    cursor: pointer;
+}
+
+.Help-image {
+    width: 25%;
+    margin-left: 4vw;
+}
+
+.Help-letter-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 2vw;
+    border-radius: 8vw;
+    font-size: 120%;
+}
+
+.Help-points-container {
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px solid;
+    position: relative;
+    top: 9vw;
+    left: 0.2vw;
+    width: 3vw;
+    height: 3vw;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    margin-bottom: 0.5vw;
+    margin-right: 0.1vw;
+  }
+
+.Instructions {
+    color: var(--selected-color);
+}
+
+.Tip {
+    color: var(--selected-color);
+    font-size: 50%;
+}
+
+.Tip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+}
+
+.Input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 10%;
+}
+
+.Input-field {
+    border: 1px solid black;
+    background-color: var(--selected-color);
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 16px;
+    width: 60%;
+    height: 20%;
+    position: absolute;
+    top: 38%;
+    font-size: 200%;
+    text-align: center;
+    font-family: 'Neuton';
+}
+
+.Input-field-scores {
+    border: 1px solid black;
+    background-color: var(--selected-color);
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 16px;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 27%;
+    font-size: 150%;
+    text-align: center;
+    font-family: 'Neuton';
+}
+
+.Error-message {
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5vh;
+    width: 100vh;
+    background-color: var(--selected-color);
+    border: 1px solid black;
+}
+
+.Cpu-Options {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 50%;
+    position: relative;
+    top: 12%;
+    left: 30%;
+    justify-content: space-between;
+}
+
+.Cpu-Button {
+    font-family: 'Neuton';
+    background-color: var(--selected-color);
+    border-radius: 30px;
+    height: 10vh;
+    width: 100%;
+    font-size: 90%;
+    ;
+}
+
+
+.Submit-button {
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 1vh;
+    width: 40vh;
+    height: 8vh;
+    font-family: 'Neuton';
+    font-size: 100%;
+    background-color: var(--selected-color);
+    position: relative;
+    top: 50%;
+}
+
+.Page-display {
+    position: absolute;
+    top: 70vh;
+    left: 37vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+.Page-display-item {
+    border-radius: 100%;
+    margin: 1vw;
+    height: 1.5vw;
+    width: 1.5vw;
+    z-index: 99;
+}

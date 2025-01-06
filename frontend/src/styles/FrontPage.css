@@ -1,0 +1,178 @@
+.App-logo {
+  width: 100%;
+  height: 40vmin;
+  display: flex;
+  justify-content: center;
+}
+
+.Square {
+  width: 30%;
+  height: auto;
+  aspect-ratio: 1/1;
+  border: 2vh solid black;
+  border-color: var(--border-colors);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(90deg);
+}
+
+.Logo-content {
+  position: relative;
+  left: -4vh;
+  font-size: 30vh;
+  transform: rotate(-90deg);
+}
+
+.Dot {
+  position: absolute;
+  width: 5vh;
+  height: auto;
+  aspect-ratio: 1/1;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.TopLeft {
+  top: 0;
+  left: 0;
+  transform: translate(-70%, -70%);
+}
+
+.TopRight {
+  top: 0;
+  right: 0;
+  transform: translate(70%, -70%);
+}
+
+.BottomLeft {
+  bottom: 0;
+  left: 0;
+  transform: translate(-70%, 70%);
+}
+
+.BottomRight {
+  bottom: 0;
+  right: 0;
+  transform: translate(70%, 70%);
+}
+
+
+.Pfp-button {
+  position: absolute;
+  top: 2vh;
+  right: 4vh;
+  width: 7vh;
+  height: 7vh;
+  cursor: pointer;
+}
+
+.Button-container {
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--selected-text);
+}
+
+button {
+  cursor: pointer;
+}
+
+.Button-container * {
+  border-width: 0px;
+  border-radius: 30px;
+  margin: 1vh;
+  width: 40vh;
+  height: 5vh;
+  font-size: 3vmin;
+  font-family: 'Neuton';
+  color: var(--selected);
+}
+
+.Single-play-button {
+  background-color: var(--selected-color);
+}
+
+.Join-lobby-button {
+  background-color: var(--selected-color);
+}
+
+.Create-lobby-button {
+  background-color: var(--selected-color);
+}
+
+.Palette-circle {
+  position: absolute;
+  top: 2vh;
+  left: 2vh;
+  border-radius: 50%;
+  width: 6vh;
+  height: 6vh;
+  box-sizing: border-box;
+  border-width: 3.1vh;
+  border-style: solid;
+  border-color: var(--border-colors);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.Palette-popup {
+  width: 40vh;
+  height: 50vh;
+  position: fixed;
+  left: 10vh;
+  top: 2vh;
+  font-size: 2vh;
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 5%;
+}
+
+.Palette-nav {
+  width: 100%;
+  background-color: white;
+  padding: 2vh;
+}
+
+.Palette-description {
+  font-weight: bold;
+  top: 1vh;
+  right: 2vh;
+}
+
+.Leave-menu-button {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 50%;
+  border: 0px;
+  position: absolute;
+  right: 1vh;
+  top: 1vh;
+  width: 2vh;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6vh;
+}
+
+.Palette-container {
+  text-align: left;
+  cursor: pointer;
+}
+
+
+.Swatch-container {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.Swatch-container * {
+  width: 25%;
+  height: 100%;
+  background-color: var(--selected-color);
+}
