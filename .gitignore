@@ -68,3 +68,5 @@ node_modules/
 # pycache
 __pycache__/
 yarn.lock
+
+credentials.json
