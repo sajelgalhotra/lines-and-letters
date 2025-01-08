@@ -26,7 +26,8 @@ const BASE = {
   "Y": 1, "Z": 4,
 }
 
-export const BASE_URL = "https://flask-fire-7e7ywojchq-uc.a.run.app";
+// export const BASE_URL = "https://flask-fire-7e7ywojchq-uc.a.run.app";
+export const BASE_URL = "http://127.0.0.1:5000";
 
 function isOdd(num) { return num % 2 }
 
