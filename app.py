@@ -6,7 +6,7 @@ from flask_cors import CORS
 
 # Initialize Firebase
 cred = firebase_admin.credentials.Certificate("credentials.json")
-firebase_admin.initialize_app(cred, {'databaseURL': 'https://lines-and-letters-default-rtdb.firebaseio.com/'})
+firebase_admin.initialize_app(cred, {'databaseURL': 'https://lines-and-letters-bc7d5-default-rtdb.firebaseio.com/'})
 
 app = Flask(__name__, static_url_path='', static_folder='frontend/build')
 CORS(app)

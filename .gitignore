@@ -76,6 +76,3 @@ package-lock.json
 coverage/
 .nyc_output/
 test-results/
-
-# Excluded specific files
-valid_words.txt
