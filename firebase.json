@@ -9,11 +9,7 @@
     "rewrites": [
       {
         "source": "**",
-        "run": {
-          "serviceId": "flask-fire",
-          "region": "us-central1",
-          "pinTag": false
-        }
+        "destination": "/index.html"
       }
     ]
   }
