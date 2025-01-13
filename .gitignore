@@ -47,8 +47,8 @@ node_modules/
 *.tgz
 
 # Build and compiled files
-build/
-dist/
+# build/
+# dist/
 # build/Release
 
 # Python cache and compiled files
