@@ -3,9 +3,23 @@ import firebase_admin
 from flask import Flask, send_from_directory
 from flask_restful import Api
 from flask_cors import CORS
+from google.cloud import secretmanager
+import json
+
+# Function to access the secret from Secret Manager
+def get_firebase_credentials(secret_id="credentials", version_id="latest"):
+    """
+    Fetch the secret from Google Secret Manager.
+    """
+    client = secretmanager.SecretManagerServiceClient()
+    project_id = "lines-and-letters-bc7d5"
+    secret_name = f"projects/{project_id}/secrets/{secret_id}/versions/{version_id}"
+    response = client.access_secret_version(name=secret_name)
+    return response.payload.data.decode("UTF-8")
 
 # Initialize Firebase
-cred = firebase_admin.credentials.Certificate("credentials.json")
+credentials_dict = json.loads(get_firebase_credentials())
+cred = firebase_admin.credentials.Certificate(credentials_dict)
 firebase_admin.initialize_app(cred, {'databaseURL': 'https://lines-and-letters-bc7d5-default-rtdb.firebaseio.com/'})
 
 app = Flask(__name__, static_url_path='', static_folder='frontend/build')

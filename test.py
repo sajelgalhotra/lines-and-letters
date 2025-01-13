@@ -2,8 +2,8 @@ import requests
 
 # HTTP test requests for the backend APIs
 
-# BASE_URL = "https://flask-fire-7e7ywojchq-uc.a.run.app"
-BASE_URL = "http://127.0.0.1:5000"
+# BASE_URL = "http://127.0.0.1:5000"
+BASE_URL = "https://flask-fire-7o54nzynwq-uc.a.run.app"
 
 LOBBY_ENDPOINT = "/lobby"
 GAMES_ENDPOINT = "/games"
